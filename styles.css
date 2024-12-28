@@ -1,0 +1,57 @@
+/* Base theme colors and styles */
+:root {
+  --crt-background: #0a0a0a;
+  --crt-text: #90EE90;
+  --crt-glow: 0 0 1px #90EE90;
+  --link-hover: #a8f5a8;
+}
+
+/* Global styles */
+body {
+  font-family: 'VT323', monospace;
+  background-color: var(--crt-background);
+  color: var(--crt-text);
+  text-shadow: var(--crt-glow);
+  min-height: 100vh;
+}
+
+/* CRT screen effect */
+.max-w-md {
+  position: relative;
+  padding: 2rem;
+}
+
+/* Link styles */
+a {
+  background-color: rgba(144, 238, 144, 0.05) !important;
+  border: 1px solid var(--crt-text) !important;
+  color: var(--crt-text) !important;
+}
+
+a:hover {
+  background-color: rgba(144, 238, 144, 0.1) !important;
+  box-shadow: 0 0 5px rgba(144, 238, 144, 0.2) !important;
+}
+
+/* Profile image effect */
+img.rounded-lg {
+  border: 2px solid var(--crt-text);
+  box-shadow: var(--crt-glow);
+}
+
+/* ASCII art border effect */
+.max-w-md::after {
+  content: "+---------------------+";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--crt-text);
+  font-family: monospace;
+}
+
+/* Update any Tailwind background classes in case they override */
+.bg-gray-100 {
+  background-color: var(--crt-background) !important;
+}
