@@ -30,5 +30,36 @@
             <a href="mailto:hi@andyschwab.link" rel="me"><i class="fa-solid fa-envelope"></i>Email</a>
         </div>
     </div>
+    <script>
+    const image = document.querySelector('.profile-image');
+    const maxDistance = 250; 
+    const triggerDistance = 100; 
+
+    document.addEventListener('mousemove', (e) => {
+        const imageRect = image.getBoundingClientRect();
+        const imageCenterX = imageRect.left + (imageRect.width / 2);
+        const imageCenterY = imageRect.top + (imageRect.height / 2);
+
+        const deltaX = e.clientX - imageCenterX;
+        const deltaY = e.clientY - imageCenterY;
+        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+        
+        if (distance < triggerDistance) {
+            const factor = Math.pow((triggerDistance - distance) / triggerDistance, 1.5);
+            const moveX = (deltaX / distance) * -maxDistance * factor;
+            const moveY = (deltaY / distance) * -maxDistance * factor;
+            
+            const distanceFromOrigin = Math.sqrt(moveX * moveX + moveY * moveY);
+            
+            image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        } else {
+            image.style.transform = 'translate(0, 0)';
+        }
+    });
+
+    document.addEventListener('mouseleave', () => {
+        image.style.transform = 'translate(0, 0)';
+    });
+    </script>
 </body>
 </html>

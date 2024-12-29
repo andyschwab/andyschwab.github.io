@@ -38,6 +38,7 @@ body {
 .profile-section {
   text-align: center;
   margin-bottom: 3rem;
+  perspective: 1000px; /* For 3D effect */
 }
 
 .profile-image {
@@ -47,6 +48,8 @@ body {
   border: 2px solid var(--crt-text);
   box-shadow: var(--crt-glow);
   border-radius: 0.5rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 /* Links section */
