@@ -5,44 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Links</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-md w-full">
+<body>
+    <div class="max-w-md">
         <!-- Profile Section -->
-        <div class="text-center mb-8">
-            <img src="./images/andyschwab-photo.jpeg" alt="Profile Picture" 
-                 class="w-32 h-32 rounded-lg mx-auto mb-4 shadow-lg">
-            <h1 class="text-2xl font-bold">Andy Schwab</h1>
+        <div class="profile-section">
+            <img src="./images/andyschwab-photo.jpeg" alt="Profile Picture" class="profile-image">
+            <h1>Andy Schwab</h1>
+            <p>takes a long time writing short emails</p>
         </div>
 
         <!-- Links Section -->
-        <div class="space-y-4">
-            <a href="https://github.com/yourusername" 
-               class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                <span>GitHub</span>
-            </a>
-
-            <a href="https://linkedin.com/in/yourusername" 
-               class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                <span>LinkedIn</span>
-            </a>
-
-            <a href="https://bsky.app/profile/yourusername" 
-               class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                <span>BlueSky</span>
-            </a>
-
-            <a href="/resume.pdf" 
-               class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                <span>Resume</span>
-            </a>
-
-            <a href="mailto:your.email@example.com" 
-               class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                <span>Email</span>
-            </a>
+        <div class="links-section">
+            <a href="https://blog.andyschwab.link"><i class="fa-solid fa-blog"></i>Blog</a>
+            <a href="https://github.com/andyschwab"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a href="https://linkedin.com/in/andrewsch"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            <a href="https://bsky.app/profile/andyschwab.link"><i class="fa-solid fa-square-rss"></i>BlueSky</a>
+            <a href=""><i class="fa-solid fa-file-lines"></i>Resume</a>
+            <a href="mailto:hi@andyschwab.link"><i class="fa-solid fa-envelope"></i>Email</a>
         </div>
     </div>
 </body>
