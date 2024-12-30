@@ -35,13 +35,14 @@
     const maxDistance = 250; 
     const triggerDistance = 100; 
 
-    document.addEventListener('mousemove', (e) => {
+    // Helper function to handle both mouse and touch events
+    function handleMovement(clientX, clientY) {
         const imageRect = image.getBoundingClientRect();
         const imageCenterX = imageRect.left + (imageRect.width / 2);
         const imageCenterY = imageRect.top + (imageRect.height / 2);
 
-        const deltaX = e.clientX - imageCenterX;
-        const deltaY = e.clientY - imageCenterY;
+        const deltaX = clientX - imageCenterX;
+        const deltaY = clientY - imageCenterY;
         const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
         
         if (distance < triggerDistance) {
@@ -49,16 +50,42 @@
             const moveX = (deltaX / distance) * -maxDistance * factor;
             const moveY = (deltaY / distance) * -maxDistance * factor;
             
-            const distanceFromOrigin = Math.sqrt(moveX * moveX + moveY * moveY);
-            
             image.style.transform = `translate(${moveX}px, ${moveY}px)`;
         } else {
             image.style.transform = 'translate(0, 0)';
         }
+    }
+
+    // Mouse events
+    document.addEventListener('mousemove', (e) => {
+        handleMovement(e.clientX, e.clientY);
     });
 
-    document.addEventListener('mouseleave', () => {
+    // Touch events
+    document.addEventListener('touchmove', (e) => {
+        const touch = e.touches[0];
+        if (e.target === image) {
+            e.preventDefault(); // Only prevent default when touching the image
+            handleMovement(touch.clientX, touch.clientY);
+        }
+    }, { passive: false });
+
+    document.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        if (e.target === image) {
+            e.preventDefault(); // Only prevent default when touching the image
+            handleMovement(touch.clientX, touch.clientY);
+        }
+    }, { passive: false });
+
+    // Reset function
+    function resetImagePosition() {
         image.style.transform = 'translate(0, 0)';
+    }
+
+    // Reset events
+    ['mouseleave', 'touchend', 'touchcancel'].forEach(eventType => {
+        document.addEventListener(eventType, resetImagePosition);
     });
     </script>
 </body>
