@@ -32,6 +32,7 @@ body {
 .max-w-md {
   width: 100%;
   max-width: 28rem;
+  margin-bottom: 4rem;
 }
 
 /* Profile section */
@@ -122,4 +123,45 @@ a:hover i {
 /* Update any Tailwind background classes in case they override */
 .bg-gray-100 {
   background-color: var(--crt-background) !important;
+}
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+    background-color: var(--crt-background);
+    border-top: 1px solid rgba(144, 238, 144, 0.1);
+    padding: 10px 20px;
+    width: 100%;
+    justify-content: center;
+    z-index: 30;
+}
+
+.bottom-menu:hover {
+    opacity: 1;
+}
+
+.bottom-menu a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;  /* Adjust height of fade effect */
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--crt-background) 75%
+    );
+    pointer-events: none;  /* Allows clicking through the overlay */
+    z-index: 20;  /* Above content but below menu */
 }
