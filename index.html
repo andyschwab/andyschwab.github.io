@@ -31,6 +31,8 @@
         </div>
     </div>
 
+    <div class="overlay"></div>
+
     <div class="bottom-menu">
         <a href="https://rustpad.io/" target="_blank" rel="noopener noreferrer">
             <i class="fa-regular fa-file-lines"></i>
@@ -38,6 +40,13 @@
         <a href="https://puter.com/" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-angle-right"></i>
         </a>
+        <a><i class="fa-solid fa-heart"></i></a>
+        <div class="dropdown-menu">
+            <a href="https://archive.org/donate/" target="_blank" rel="noopener noreferrer">Archive.org</a>
+            <a href="https://donate.wikimedia.org/wiki/Ways_to_Give" target="_blank" rel="noopener noreferrer">Wikimedia</a>
+            <a href="https://signal.org/donate/" target="_blank" rel="noopener noreferrer">Signal</a>
+            <a href="https://github.com/sponsors/explore" target="_blank" rel="noopener noreferrer">OSS</a>
+        </div>
     </div>
 
     <script>
@@ -96,6 +105,24 @@
     // Reset events
     ['mouseleave', 'touchend', 'touchcancel'].forEach(eventType => {
         document.addEventListener(eventType, resetImagePosition);
+    });
+
+    // Dropdown menu functionality
+    const moneyIcon = document.querySelector('.fa-heart').parentElement;
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const overlay = document.querySelector('.overlay');
+
+    moneyIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('show');
+        overlay.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!moneyIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+            overlay.classList.remove('show');
+        }
     });
     </script>
 </body>
