@@ -18,8 +18,8 @@ Status: design locked, implementation not yet started. Draft copy below is a sta
 ## 2. Unified Offering Framing (the anchor)
 
 - **Practice name / headline:** **Human-centered technology & operations.** (This is the page headline — the former eyebrow, promoted.)
-- **Punchline (closes the intro paragraph):** *"Technology and operations, built around people."*
 - **Plain-English gloss of the idea:** helping organizations adopt emerging technology and lead the change that makes it stick, with people at the center.
+- (The former headline "Technology and operations, built around people" was dropped — it just restated the new headline.)
 - **The single idea:** introducing new capability into an organization in a way that *strengthens the people in it rather than routing around them.* Technology is the new capability; operations and leadership are what make it actually take hold.
 - **Two facets of one practice, not a menu:**
   - **Technology** — building software and putting AI to work where it sharpens judgment.
@@ -63,7 +63,7 @@ Status: design locked, implementation not yet started. Draft copy below is a sta
 
 Three sections plus a footer. No separate header bar; the intro is the top of the page. One column throughout.
 
-1. **Intro** — centered, rounded **portrait** (the authenticity anchor, recognizable from other profiles); the **name** as a small kicker; the **headline** ("Human-centered technology & operations."); a short prose **snapshot** of prior experience (no résumé list) that lands on the **punchline**; a low-key email link.
+1. **Intro** — centered, rounded **portrait** (the authenticity anchor, recognizable from other profiles); the **name** as a small kicker; the **headline** ("Human-centered technology & operations."); a short prose **snapshot** of prior experience (no résumé list) plus a "now" line on current focus; a low-key email link. Headline and snapshot share one width so they align.
 2. **The work** — the two facets (Technology — software & AI; Operations & leadership — people & process), tight, with a single conviction line folded in so the philosophy survives without its own section.
 3. **Connect** — email, a plain "open to new work / UK-based" line, and links (GitHub, LinkedIn, Bluesky, Blog — the writing lives here as a link).
 4. **Footer** — "Supporting:" (Archive.org, Wikimedia, Signal, Open Source, leaflet.pub) as the only personality trace; copyright.
@@ -79,11 +79,11 @@ Dissolved from the earlier draft: the standalone Approach, Selected background (
 - Kicker (mono, small): `ANDY SCHWAB`
 - Headline: **Human-centered technology & operations.**
 - Snapshot paragraph (prose, no list; weave verifiable specifics as inline links): "Twenty years building teams and running the systems that hold distributed organizations together — command of an Officer Candidate School in the Army, technology operations and identity infrastructure at [Protocol Labs](https://protocol.ai), a venture-backed startup built and wound down, a software development program taught, a book and [a design paper](https://github.com/sodal-project/community) written along the way." (Link the book to its listing if one exists; otherwise leave plain — *Ultralight IT*, ISBN 978-0997869309.)
-- Now-line + punchline: "Now helping leaders put new technology, especially AI, to use without losing the judgment and trust their people depend on. *Technology and operations, built around people.*"
+- Now-line: "Now helping leaders put new technology, especially AI, to use without losing the judgment and trust their people depend on."
 - Email link: plain inline link, label "Email", to `hi@andyschwab.link`. Not a button.
 
 ### The work
-- **Technology — software & AI.** "I build software and apply AI where it sharpens judgment rather than replacing it. Recent work: a platform that uses AI to improve access-control decisions for organizations without a full IAM system."
+- **Technology — software & AI.** "I build software, and apply AI where it sharpens judgment rather than replacing it — tools that help people see clearly and decide faster, never tools that decide for them." (No specific current project named; the AI access-control work is future, not yet shipped.)
 - **Operations & leadership — people & process.** "Good operations create the clarity that lets people do their best work — legible expectations, real accountability, room to grow. Not management as control."
 - **Conviction line (folds the old Approach):** "Underneath both: technology is a mirror, not a mind, and management grows people rather than controlling them. Keep people at the center."
 
@@ -136,7 +136,7 @@ Decision: evergreen accent (a mature thread back to the old terminal green) over
 
 ### Layout & spacing
 - Single narrow column, page max-width ~`46rem`; text/measure column ~`36rem`.
-- **Intro is centered** (portrait, kicker, headline, and short snapshot all center-aligned); keep the snapshot brief so centered text stays readable. Subsequent sections are left-aligned within the measure.
+- **Intro is centered** (portrait, kicker, headline centered; snapshot left-aligned). Headline and snapshot have no additional max-width constraint — they fill the full page column (`--page-max`) the same as all other sections. Subsequent sections are left-aligned within the same column.
 - 4px base unit; rem steps: `0.25 / 0.5 / 0.75 / 1 / 1.5 / 2 / 3 / 4 / 6 / 8`.
 - Section vertical padding: `clamp(3.5rem, 7vw, 7rem)`.
 - Generous whitespace, clear separation between sections (space and/or a hairline `--border` rule).
@@ -181,6 +181,8 @@ Vanilla HTML/CSS/JS, no build step, no framework.
 - Headline: **"Human-centered technology & operations."** (former eyebrow promoted to headline; "change" rejected as jargon; former headline "Technology and operations, built around people" demoted to the intro punchline).
 - Structure: **compressed** to three sections + footer — Intro (centered portrait + kicker + headline + prose snapshot + punchline), The work, Connect. No separate header bar. Dissolved the standalone Approach, Background-list, and Writing sections.
 - Background: a **prose snapshot**, not a résumé list; verifiable specifics carried as inline links.
+- No specific current project named (the AI access-control platform is future work, not shipped); the Technology blurb states the stance instead.
+- Intro headline and snapshot share one width to avoid a visual mismatch; the headline-restating punchline was removed.
 - Services: **two** facets (Technology — software & AI; Operations & leadership), not three. AI integration and software development merged; convictions reduced to one line.
 - Aesthetic: calm editorial; Atkinson Hyperlegible Next + IBM Plex Mono accents.
 - Accent color: desaturated **evergreen** (not slate/blue).
