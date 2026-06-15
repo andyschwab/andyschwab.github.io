@@ -17,8 +17,9 @@ Status: design locked, implementation not yet started. Draft copy below is a sta
 
 ## 2. Unified Offering Framing (the anchor)
 
-- **Practice name / category:** **Human-centered technology and change.**
-- **One-line statement (hero headline):** *"Technology and operations, built around people."* (Plain-English gloss of the idea: helping organizations adopt emerging technology and lead the change that makes it stick, with people at the center.)
+- **Practice name / headline:** **Human-centered technology & operations.** (This is the page headline — the former eyebrow, promoted.)
+- **Punchline (closes the intro paragraph):** *"Technology and operations, built around people."*
+- **Plain-English gloss of the idea:** helping organizations adopt emerging technology and lead the change that makes it stick, with people at the center.
 - **The single idea:** introducing new capability into an organization in a way that *strengthens the people in it rather than routing around them.* Technology is the new capability; operations and leadership are what make it actually take hold.
 - **Two facets of one practice, not a menu:**
   - **Technology** — building software and putting AI to work where it sharpens judgment.
@@ -58,53 +59,38 @@ Status: design locked, implementation not yet started. Draft copy below is a sta
 
 ---
 
-## 4. Page Structure (single scroll)
+## 4. Page Structure (compressed)
 
-Order top to bottom. One column throughout.
+Three sections plus a footer. No separate header bar; the intro is the top of the page. One column throughout.
 
-1. **Header (minimal, optionally sticky)** — wordmark "Andy Schwab" and a `Contact` anchor link. No availability pill.
-2. **Hero / positioning** — eyebrow label, the unified one-line statement as the headline, a 2–3 sentence paragraph, and a low-key email link (a plain link, not a marketing button).
-3. **The work** — two blocks presented as facets of one practice (Technology — software & AI; Operations & leadership — people & process).
-4. **Approach / philosophy** — short section on AI-as-mirror, management-as-growth, and integrity/dignity; closes with a link to the writing.
-5. **Selected background** — understated proof, framed as context not flourish.
-6. **Writing** — one-line intro + link to `blog.andyschwab.link`.
-7. **Contact** — email, a plain availability line, "UK-based," and social links (GitHub, LinkedIn, Bluesky).
-8. **Footer** — a short, quiet list of organizations Andy supports (Archive.org, Wikimedia, Signal, Open Source, leaflet.pub) as the only personality trace; copyright.
+1. **Intro** — centered, rounded **portrait** (the authenticity anchor, recognizable from other profiles); the **name** as a small kicker; the **headline** ("Human-centered technology & operations."); a short prose **snapshot** of prior experience (no résumé list) that lands on the **punchline**; a low-key email link.
+2. **The work** — the two facets (Technology — software & AI; Operations & leadership — people & process), tight, with a single conviction line folded in so the philosophy survives without its own section.
+3. **Connect** — email, a plain "open to new work / UK-based" line, and links (GitHub, LinkedIn, Bluesky, Blog — the writing lives here as a link).
+4. **Footer** — "Supporting:" (Archive.org, Wikimedia, Signal, Open Source, leaflet.pub) as the only personality trace; copyright.
+
+Dissolved from the earlier draft: the standalone Approach, Selected background (list), and Writing sections. Background becomes the intro snapshot, the convictions shrink to one line in The work, and writing is a link in Connect.
 
 ---
 
 ## 5. Draft Copy (refine, don't ship as-is)
 
-### Hero
-- Eyebrow (mono): `HUMAN-CENTERED TECHNOLOGY & CHANGE`
-- Headline: **Technology and operations, built around people.**
-- Paragraph: "Twenty years building teams and running the systems that hold distributed organizations together — in the US Army, at Protocol Labs, in the classroom. Now consulting with leaders putting new technology, especially AI, to use without losing the judgment and trust their people depend on."
+### Intro
+- Portrait: centered, rounded. Alt: "Andy Schwab".
+- Kicker (mono, small): `ANDY SCHWAB`
+- Headline: **Human-centered technology & operations.**
+- Snapshot paragraph (prose, no list; weave verifiable specifics as inline links): "Twenty years building teams and running the systems that hold distributed organizations together — command of an Officer Candidate School in the Army, technology operations and identity infrastructure at [Protocol Labs](https://protocol.ai), a venture-backed startup built and wound down, a software development program taught, a book and [a design paper](https://github.com/sodal-project/community) written along the way." (Link the book to its listing if one exists; otherwise leave plain — *Ultralight IT*, ISBN 978-0997869309.)
+- Now-line + punchline: "Now helping leaders put new technology, especially AI, to use without losing the judgment and trust their people depend on. *Technology and operations, built around people.*"
 - Email link: plain inline link, label "Email", to `hi@andyschwab.link`. Not a button.
 
 ### The work
-- **Technology — software & AI.** "I build software and apply AI where it sharpens judgment rather than replacing it. Recent work: a platform that uses AI to improve access-control decisions for organizations without a full IAM system. Before that, identity and access infrastructure at scale across the Filecoin ecosystem, and engineering teams led from prototype to production."
-- **Operations & leadership — people & process.** "Good operations create the clarity that lets people do their best work — legible expectations, real accountability, room to grow. Not management as control. Twenty years leading and developing others, including command of an Officer Candidate School."
+- **Technology — software & AI.** "I build software and apply AI where it sharpens judgment rather than replacing it. Recent work: a platform that uses AI to improve access-control decisions for organizations without a full IAM system."
+- **Operations & leadership — people & process.** "Good operations create the clarity that lets people do their best work — legible expectations, real accountability, room to grow. Not management as control."
+- **Conviction line (folds the old Approach):** "Underneath both: technology is a mirror, not a mind, and management grows people rather than controlling them. Keep people at the center."
 
-### Approach
-"A few convictions underpin the work. Technology, AI included, is a mirror of human knowledge rather than a mind of its own — its value is helping people see and decide more clearly, not deciding for them. Management, done well, is not control but a way to create clarity, accountability, and room to grow. Both rest on the same foundation: treating people with integrity and dignity. More on these ideas in the writing."
-
-### Selected background (understated bullets)
-Make these verifiable: link out where a source exists (the design paper → `github.com/sodal-project/community`; the book → its listing/ISBN; orgs → their sites). The links are part of the legitimacy signal.
-- Founded and led **Sodal** (2024–2026), a venture-backed startup — built the team, raised capital, shipped open-source product, and wound it down cleanly with a published research artifact.
-- **Protocol Labs** (2020–2024) — led technology operations, then designed and deployed graph-based identity and access infrastructure securing thousands of participants across the Filecoin ecosystem.
-- **Major (Retired), US Army / Army National Guard** (2001–2021) — twenty years as a leader and trainer, two combat deployments, culminating in command of an Officer Candidate School.
-- **Author** — *Agency Graphs: A Design Framework for Composite Identity and Probabilistic Trust* (2026) and *Ultralight IT: A Guide for Smaller Organizations* (2016).
-- **Public service** — technical advisor on two New Hampshire gubernatorial commissions on cryptocurrency/digital assets (2022) and stabletokens (2025).
-- **Earlier** — Head of Technology for a nonprofit operating in 50+ countries; Assistant Professor supporting a software development program.
-
-### Writing
-"Notes on technology, trust, and leadership." → link to `blog.andyschwab.link`.
-
-### Contact
-- Email: `hi@andyschwab.link`
-- Availability: "Currently open to new work." (plain; no scarcity framing)
-- Location: UK-based
-- Links: GitHub (`github.com/andyschwab`), LinkedIn (`linkedin.com/in/andrewsch`), Bluesky (`bsky.app/profile/andyschwab.link`).
+### Connect
+- Email: `hi@andyschwab.link` (plain inline link).
+- Line: "Currently open to new work. UK-based." (plain; no scarcity framing)
+- Links: GitHub (`github.com/andyschwab`), LinkedIn (`linkedin.com/in/andrewsch`), Bluesky (`bsky.app/profile/andyschwab.link`), Blog (`blog.andyschwab.link`).
 
 ### Footer
 - "Supporting:" Archive.org · Wikimedia · Signal · Open Source · leaflet.pub.
@@ -116,13 +102,13 @@ Make these verifiable: link out where a source exists (the design paper → `git
 
 ### Typography
 - **Primary (headings + body):** Atkinson Hyperlegible Next — accessibility-first, dignified humanist sans; matches the blog. Load via Google Fonts. Fallback stack: `system-ui, -apple-system, Segoe UI, Roboto, sans-serif`.
-- **Mono accent:** IBM Plex Mono — used only for eyebrow labels and metadata (uppercase, letter-spaced, small). Fallback: `ui-monospace, SFMono-Regular, Menlo, monospace`.
+- **Mono accent:** IBM Plex Mono — small labels and metadata only: the name kicker, section labels, link rows, footer (uppercase, letter-spaced, small). Fallback: `ui-monospace, SFMono-Regular, Menlo, monospace`.
 - **Scale (fluid via `clamp()`):**
-  - Eyebrow / meta: `0.8125rem`, uppercase, `letter-spacing: 0.08em`.
+  - Kicker / meta (mono): `0.8125rem`, uppercase, `letter-spacing: 0.08em`.
   - Body: `clamp(1.05rem, 1rem + 0.3vw, 1.2rem)`, line-height `1.6`.
   - h3 (service titles): `clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem)`.
   - h2 (section titles): `clamp(1.5rem, 1.2rem + 1.2vw, 2rem)`.
-  - h1 (hero): `clamp(2.1rem, 1.6rem + 2.6vw, 3.4rem)`, line-height `1.15`.
+  - h1 (headline — the promoted former eyebrow; set in the sans, not mono): `clamp(2.1rem, 1.6rem + 2.6vw, 3.4rem)`, line-height `1.15`.
 - **Measure:** 60–68ch for text columns.
 
 ### Color
@@ -149,9 +135,10 @@ Dark:
 Decision: evergreen accent (a mature thread back to the old terminal green) over slate/blue. All text/accent pairings must meet WCAG AA (4.5:1 body, 3:1 large).
 
 ### Layout & spacing
-- Page container max-width ~`64rem`; text/measure column ~`36rem`.
+- Single narrow column, page max-width ~`46rem`; text/measure column ~`36rem`.
+- **Intro is centered** (portrait, kicker, headline, and short snapshot all center-aligned); keep the snapshot brief so centered text stays readable. Subsequent sections are left-aligned within the measure.
 - 4px base unit; rem steps: `0.25 / 0.5 / 0.75 / 1 / 1.5 / 2 / 3 / 4 / 6 / 8`.
-- Section vertical padding: `clamp(4rem, 8vw, 8rem)`.
+- Section vertical padding: `clamp(3.5rem, 7vw, 7rem)`.
 - Generous whitespace, clear separation between sections (space and/or a hairline `--border` rule).
 
 ### Motion
@@ -160,7 +147,7 @@ Decision: evergreen accent (a mature thread back to the old terminal green) over
 - No magnetic photo, no dock, no dropdowns, no decorative gimmicks.
 
 ### Imagery
-- Keep `images/andyschwab-photo.jpeg` as a static, tasteful portrait (no interaction).
+- `images/andyschwab-photo.jpeg` — centered, rounded (circle), prominent (~`7–9rem`), static (no interaction). This is the authenticity anchor: the same face shown on other profiles.
 - Add a simple monogram favicon (e.g. "AS"). Retire Beret Guy as the primary icon; it may survive as a hidden easter egg if desired.
 
 ### Accessibility
@@ -173,7 +160,7 @@ Decision: evergreen accent (a mature thread back to the old terminal green) over
 Vanilla HTML/CSS/JS, no build step, no framework.
 
 - `index.html` — semantic single-scroll page with the sections above, plus full meta/SEO:
-  - `<title>`: "Andy Schwab — Human-Centered Technology & Change"
+  - `<title>`: "Andy Schwab — Human-Centered Technology & Operations"
   - meta description (see SEO below), Open Graph + Twitter card tags, canonical `https://andyschwab.link/`.
   - JSON-LD `Person` schema (name, url, jobTitle, sameAs links, `addressCountry: GB` only — no city, email).
   - Remove the existing magnetic-photo script and the dock/dropdown scripts.
@@ -183,7 +170,7 @@ Vanilla HTML/CSS/JS, no build step, no framework.
 - Keep `CNAME` and `LICENSE`. Update `README.md` with a one-line description and brief edit instructions.
 
 ### SEO defaults
-- Description: "Andy Schwab helps organizations adopt emerging technology and lead the change that makes it stick, with people at the center — working across technology and operations & leadership."
+- Description: "Andy Schwab — human-centered technology and operations. Twenty years across the military, Protocol Labs, and education; now consulting on technology and the operations to make it stick, with people at the center."
 - Keep the description factual and plain; it is for someone confirming who Andy is, not a sales hook.
 
 ---
@@ -191,15 +178,17 @@ Vanilla HTML/CSS/JS, no build step, no framework.
 ## 8. Decisions Log (defaults chosen)
 
 - Page purpose: a reassurance / "don't get in the way" page for people who already have context — not a pitch or a funnel.
-- Services: **two** facets (Technology — software & AI; Operations & leadership), not three. AI integration and software development merged.
+- Headline: **"Human-centered technology & operations."** (former eyebrow promoted to headline; "change" rejected as jargon; former headline "Technology and operations, built around people" demoted to the intro punchline).
+- Structure: **compressed** to three sections + footer — Intro (centered portrait + kicker + headline + prose snapshot + punchline), The work, Connect. No separate header bar. Dissolved the standalone Approach, Background-list, and Writing sections.
+- Background: a **prose snapshot**, not a résumé list; verifiable specifics carried as inline links.
+- Services: **two** facets (Technology — software & AI; Operations & leadership), not three. AI integration and software development merged; convictions reduced to one line.
 - Aesthetic: calm editorial; Atkinson Hyperlegible Next + IBM Plex Mono accents.
 - Accent color: desaturated **evergreen** (not slate/blue).
-- Structure: substantive single-scroll page.
-- Engagement: `mailto` + a plain "currently open to new work" line (no scarcity, no form, no scheduler). No availability pill in the header.
+- Engagement: `mailto` + a plain "currently open to new work / UK-based" line (no scarcity, no form, no scheduler).
 - Location: shown as "UK-based" (no city); JSON-LD uses `addressCountry: GB` only.
-- Writing section: **link out** to the blog rather than hardcoding post titles (avoids staleness; revisit if desired).
+- Writing: a link in Connect (no standalone section; link out to the blog rather than hardcoding titles).
 - Personality: subtle trace only — the "Supporting:" footer (now including leaflet.pub); gimmicks retired.
-- Voice: terse and declarative; no "you," near-zero "I"; warmth via word choice, not first/second person.
+- Voice: ban the pitch, not the pronoun — no "you," natural active voice with a light factual "I"; no passive contortions.
 - Tech: vanilla, zero build, GitHub Pages apex.
 
 ---
