@@ -188,7 +188,7 @@ Vanilla HTML/CSS/JS, no build step, no framework.
 - Accent color: desaturated **evergreen** (not slate/blue).
 - Engagement: `mailto` + a plain "currently open to new work / UK-based" line (no scarcity, no form, no scheduler).
 - Location: shown as "UK-based" (no city); JSON-LD uses `addressCountry: GB` only.
-- Writing: a link in Connect (no standalone section; link out to the blog rather than hardcoding titles).
+- Writing: a "Latest writing" section below The work fetches the three most recent posts from AT Protocol (`site.standard.document` on the Leaflet blog); full archive remains at `blog.andyschwab.link`, with a link in the footer.
 - Personality: subtle trace only — the "Supporting:" footer (now including leaflet.pub); gimmicks retired.
 - Voice: ban the pitch, not the pronoun — no "you," natural active voice with a light factual "I"; no passive contortions.
 - Tech: vanilla, zero build, GitHub Pages apex.

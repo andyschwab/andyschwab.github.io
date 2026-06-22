@@ -147,6 +147,73 @@ a:hover { color: var(--accent-strong); }
 
 .work__item p { margin: 0; color: var(--ink-secondary); }
 
+/* Latest writing */
+
+.writing {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.writing__item {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.writing__thumb {
+  flex-shrink: 0;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.writing__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.writing__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.writing__title {
+  margin: 0 0 0.35rem;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.writing__date {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.writing__desc {
+  margin: 0;
+  color: var(--ink-secondary);
+}
+
+.writing__more {
+  margin: 2rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
 /* Footer */
 
 .site-footer {
